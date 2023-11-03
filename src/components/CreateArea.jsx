@@ -11,8 +11,11 @@ function CreateArea(props) {
     content: ""
   });
 
+
+  console.log(note)
   function handleChange(event) {
     const { name, value } = event.target;
+    console.log(name,value)
 
     setNote(prevNote => {
       return {
@@ -34,6 +37,8 @@ function CreateArea(props) {
   function expand() {
     setExpanded(true);
   }
+
+
 
   return (
     <div>
